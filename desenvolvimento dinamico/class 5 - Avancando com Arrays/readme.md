@@ -1,28 +1,22 @@
-#Métodos de Array
+<h1>Avançando com Arrays</h1>
 
-1) join()
-    Junta sequencialmente os elementos de um Array usando o caracter (ou caracteres) passado por parâmetro. Se ele não é indicado, usa-se a vírgula como default.
+<h2>splice()</h2>
+<p>Altera o array, seja adicionando ou removendo elementos dele.</p>
+<code>array.splice(indice, numero de elementos)</code>
+<p>O indice é o ponto de inicio para a remoção dos elementos. Elementos que têm um número de indice menor que o indice fornecido não serão removidos:</p>
 
-2) shift()
-    Retorna o primeiro valor de um Array e remove os demais.
+<code>array.splice(2)</code>
+<p>Todos os elementos a partir do indice 2 serão removidos.
 
-3) unshift()
-    Adiciona um elemento ao início de uma matriz.
+Se não definirmos o segundo parâmetro, todos os elementos começando do indice informado serão removidos do array.
+</p>
 
-3) sort()
-    Ordena os elementos de um Array.
+<h2>Segundo exemplo</h2>
+<p>Se for passado o segundo parâmetro como 1, o elemento que está no indice 2 será removido. Exe:</p>
+<code></code>
 
-4) reverse()
-    inverte a ordem dos elementos. O primeiro se torna o último e o último se torna o primeiro.
+After
+<code>let array = [1,2,3,"Hello World, 4.12, true"]</code>
 
-5) slice()
-    retorna os elementos selecionados de um Array.
-
-6) lenght()
-    indica o número de elementos em um Array.
-
-7) push(value1, value2, ...)
-    adiciona um ou mais elementos (value1, value2, etc...) ao final de um Array, retornando o seu novo tamanho.
-
-8) pop()
-    Retorna o último elemento de um Array e remove os demais.
+Before
+<code>let array = [1,2,"Hello World, 4.12, true"]</code>
