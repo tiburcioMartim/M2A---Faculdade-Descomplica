@@ -13,10 +13,12 @@ Se não definirmos o segundo parâmetro, todos os elementos começando do indice
 
 <h2>Segundo exemplo</h2>
 <p>Se for passado o segundo parâmetro como 1, o elemento que está no indice 2 será removido. Exe:</p>
-<code></code>
+<code>array.splice(2,1);</code>
 
 After
 <code>let array = [1,2,3,"Hello World, 4.12, true"]</code>
 
 Before
 <code>let array = [1,2,"Hello World, 4.12, true"]</code>
+
+
