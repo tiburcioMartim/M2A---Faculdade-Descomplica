@@ -22,3 +22,11 @@ Before
 <code>let array = [1,2,"Hello World, 4.12, true"]</code>
 
 
+<h1>Sumário</h1>
+<ul>
+    <lo>Manipulando mais Arrays</lo>
+    <lo>filter()</lo>
+    <lo>map()</lo>
+    <lo>reduce()</lo>
+    <lo>forEach()</lo>
+</ul>
