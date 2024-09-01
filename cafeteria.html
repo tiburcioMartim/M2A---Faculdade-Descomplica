@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+        let bebida = prompt(
+            "Escolha sua bebida: café, leite ou chá:"
+        ).toLowerCase();
+
+        switch (bebida) {
+            case "café":
+                var valor = 3.5;
+                alert(
+                    `Você escolheu café. O valor a ser pago é R$ ${valor.toFixed(2)}.`
+                );
+                break;
+            case "leite":
+                var valor = 2.5;
+                console.log(
+                    `Você escolheu leite. O valor a ser pago é R$ ${valor.toFixed(2)}.`
+                );
+                break;
+            case "chá":
+                var valor = 2.0;
+                console.log(
+                    `Você escolheu chá. O valor a ser pago é R$ ${valor.toFixed(2)}.`
+                );
+                break;
+            default:
+                alert("Opção inválida. Por favor, escolha entre café, leite ou chá.");
+        }
+    </script>
+</head>
+
+<body></body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .estilo{
+            text-transform: uppercase;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="estilo">Div com estilo.</div>
+    <div class="estilo">Div com estilo.</div>
+
+    <p class="estilo">Elemento p com estilo</p>
+    <p>Isto é um <span class="estilo">Elemento span</span> dentro de um Elemento p.</p>
+</body>
+<script>
+    let estilo = document.querySelectorAll('.estilo');
+    for (i = 0; i < estilo.length; i++) {
+        estilo[i].style.backgroundColor = "blue";
+        estilo[i].style.color = "white";
+        estilo[i].innerText = estilo[i].innerText.toUpperCase();
+    }
+</script>
+
+</html>

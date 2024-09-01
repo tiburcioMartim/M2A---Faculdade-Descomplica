@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Times de futebol</h1>
+    <ul id="timesFutebol">
+
+    </ul>
+</body>
+<script>
+    let listaTimes = ["Flamengo", "Fluminense", "Botafogo", "Barcelona", "Vasco"]
+
+    let timesFutebol = document.getElementById("timesFutebol");
+
+    for (let i = 0; i < listaTimes.length; i++) {
+        let time = document.createElement("li");
+        time.textContent = listaTimes[i];
+        timesFutebol.appendChild(time);
+    }
+
+</script>
+
+</html>
