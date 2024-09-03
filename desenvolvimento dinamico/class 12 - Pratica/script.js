@@ -40,22 +40,31 @@ class Desenvolvedor extends Funcionario {
     }
 }
 
-console.log("\n");
 
-let funcionario_1 = new Funcionario("Tiago", 18, "Estoquista");
-funcionario_1.seApresentar();
-funcionario_1.trabalhar();
 
-console.log("\n");
 
-let gerente_1 = new Gerente("Pedro", 25, "Gerente", "Pessoal");
-gerente_1.seApresentar();
-gerente_1.gerenciar();
 
-console.log("\n");
 
-let desenvolvedor_1 = new Desenvolvedor("Martim", 32, "Desenvolvedor", "Python");
-desenvolvedor_1.seApresentar();
-desenvolvedor_1.programar();
 
-console.log("\n");
+
+// if(true) { código da aula 10
+//     console.log("\n");
+
+//     let funcionario_1 = new Funcionario("Tiago", 18, "Estoquista");
+//     funcionario_1.seApresentar();
+//     funcionario_1.trabalhar();
+
+//     console.log("\n");
+
+//     let gerente_1 = new Gerente("Pedro", 25, "Gerente", "Pessoal");
+//     gerente_1.seApresentar();
+//     gerente_1.gerenciar();
+
+//     console.log("\n");
+
+//     let desenvolvedor_1 = new Desenvolvedor("Martim", 32, "Desenvolvedor", "Python");
+//     desenvolvedor_1.seApresentar();
+//     desenvolvedor_1.programar();
+
+//     console.log("\n");
+// }
