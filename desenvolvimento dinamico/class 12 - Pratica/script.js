@@ -1,4 +1,3 @@
-
 let form_Funcionarios = document.getElementById("formulario_Funcionarios");
 let form_Resultados = document.getElementById("formulario_Resultados");
 let registro_Funcionarios = [];
@@ -49,24 +48,46 @@ form_Funcionarios.addEventListener('submit', function (event) {
         }
     }
 
-    const nome         = document.getElementById("form_Name").value;
-    const idade        = document.getElementById("form_idade").value;
-    const cargo        = Array.from(document.getElementsByName("Cargo")).find(radio => radio.checked)?.id;
+    const nome = document.getElementById("form_Name").value;
+    const idade = document.getElementById("form_idade").value;
+    const cargo = Array.from(document.getElementsByName("Cargo")).find(radio => radio.checked)?.id;
     const departamento = Array.from(document.getElementsByName("Departamento")).find(radio => radio.checked)?.id;
-    const linguagem    = Array.from(document.getElementsByName("Linguagem")).find(radio => radio.checked)?.id;
+    const linguagem = Array.from(document.getElementsByName("Linguagem")).find(radio => radio.checked)?.id;
 
 
+    // EXCEPTIONS
+    function checkIdade(idade, callback) {
+        if (idade < 0) {
+            callback(new Error("A idade não pode ser negativa."));
+            return;
+        };
+
+        callback(null, "Idade aceita.")
+    };
+
+    checkIdade(idade, (error, result) => {
+        if (error) {
+            console.log("Ocorreu um problema: ", error.message);
+        } else {
+            console.log(result);
+
+        }
+    });
 
     let funcionario;
-    if (cargo === "Gerente") {
-        funcionario = new Gerente(nome, idade, cargo, departamento)
-
-    } else if (cargo === "Desenvolvedor") {
-        funcionario = new Desenvolvedor(nome, idade, cargo, linguagem)
-
+    if (idade < 0) {
+        alert("A idade não pode ser negativa.");
+        return;
     } else {
-        funcionario = new Funcionario(nome, idade, cargo)
+        if (cargo === "Gerente") {
+            funcionario = new Gerente(nome, idade, cargo, departamento)
 
+        } else if (cargo === "Desenvolvedor") {
+            funcionario = new Desenvolvedor(nome, idade, cargo, linguagem)
+
+        } else {
+            funcionario = new Funcionario(nome, idade, cargo)
+        }
     }
 
     registro_Funcionarios.push(funcionario);
