@@ -18,7 +18,7 @@ try {
     const isPositive = checkPositive(numbers);
 
     console.log(isPositive);
-    
+
 } catch (error) {
     console.log("Ocorreu um erro", error.message);
 }
